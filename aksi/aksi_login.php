@@ -17,7 +17,7 @@ if ($cek > 0) {
     $data = mysqli_fetch_assoc($login);
 
     // simpan data ke session
-    $_SESSION['user_id'] = $data['id'];
+    $_SESSION['id_user'] = $data['id_user'];
     $_SESSION['username'] = $data['username'];
     $_SESSION['nama']     = $data['nama'];
     $_SESSION['role']    = $data['role'];

@@ -17,8 +17,8 @@
         $query_lama = "SELECT cover FROM buku WHERE id_buku='$id_buku'";
         $result_lama = mysqli_query($config, $query_lama);
         $data_lama = mysqli_fetch_assoc($result_lama);
-        if ($data_lama && file_exists("../assets/img/cover" . $data_lama['cover'])) {
-            unlink("../assets/img/cover" . $data_lama['cover']);
+        if ($data_lama && file_exists("../uploads/cover" . $data_lama['cover'])) {
+            unlink("../uploads/cover" . $data_lama['cover']);
         }
 
         // Upload cover baru
@@ -30,7 +30,7 @@
         $nama_file_baru = "cover_" . time() . "_" . basename($nama_file);
 
         // Direktori penyimpanan cover
-        $dir_upload = "../assets/img/cover/";
+        $dir_upload = "../uploads/cover/";
 
         // Pindahkan file ke direktori penyimpanan
         if (move_uploaded_file($tmp_file, $dir_upload . $nama_file_baru)) {

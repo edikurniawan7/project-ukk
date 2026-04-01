@@ -48,6 +48,17 @@
             </div>
         </div>
 
+        <!-- Aktivitas Terbaru -->
+        <div class="mb-6">
+            <div class="bg-white p-8 rounded-lg shadow-lg relative overflow-hidden">
+                <h2 class="text-xl font-bold text-blue-secondary mt-1 mb-4">Aktivitas Terbaru</h2>
+                <div class="bg-teal-primary rounded-lg shadow-lg relative overflow-hidden">
+                    
+                </div>
+            </div>
+        </div>
+
+
         <div class="mb-6">
                 <h2 class="text-xl font-bold text-blue-secondary mb-4">Rekomendasi Buku Hari ini</h2>
                 <div class="grid grid-cols-5 gap-6">
@@ -57,7 +68,7 @@
                 ?>
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                     <div class="h-40 w-full bg-blue-100 flex items-center justify-center overflow-hidden">
-                        <img src="../assets/img/cover/<?= $buku['cover']; ?>" alt="<?= $buku['judul']; ?>" class="max-h-full max-w-full object-contain">
+                        <img src="../uploads/cover/<?= $buku['cover']; ?>" alt="<?= $buku['judul']; ?>" class="max-h-full max-w-full object-contain">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                     <h3 class="text-center font-bold text-blue-primary mb-2"><?= $buku['judul']; ?></h3>

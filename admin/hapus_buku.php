@@ -2,8 +2,8 @@
     include '../config.php';
 
     // Ambil ID buku dari parameter URL
-    if (isset($_GET['id'])) {
-        $id_buku = $_GET['id'];
+    if (isset($_GET['id_buku'])) {
+        $id_buku = $_GET['id_buku'];
 
         // Hapus buku dari database
         $query = "DELETE FROM buku WHERE id_buku='$id_buku'";

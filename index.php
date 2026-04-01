@@ -282,7 +282,7 @@ $q_buku_terbaru = mysqli_query($config, "
 
                 <!-- Cover -->
                 <div class="h-40 w-full bg-blue-100 flex items-center justify-center overflow-hidden">
-                    <img src="assets/img/cover/<?= $buku['cover']; ?>"
+                    <img src="uploads/cover/<?= $buku['cover']; ?>"
                          class="max-h-full max-w-full object-contain"
                          onerror="this.src='assets/img/no-image.png'">
                 </div>

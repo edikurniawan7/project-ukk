@@ -2,7 +2,7 @@
 $current_page = basename($_SERVER['PHP_SELF']);
 $menu_items = [
     ['file' => 'dashboard.php', 'label' => 'Dashboard', 'icon' => 'dashboard.png'],
-    ['file' => 'transaksi.php', 'label' => 'Peminjaman', 'icon' => 'book.png'],
+    ['file' => 'daftar_peminjaman.php', 'label' => 'Peminjaman', 'icon' => 'book.png'],
     ['file' => 'riwayat_peminjaman.php', 'label' => 'Riwayat', 'icon' => 'history.png'],
 ];
 ?>
