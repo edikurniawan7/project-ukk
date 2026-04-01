@@ -26,7 +26,7 @@ session_start();
     <main class="flex-1 ml-64 p-8 mt-20">
 
     <h1 class="text-2xl font-bold text-blue-600 mb-6">
-        Daftar Buku
+        Daftar Buku Perpustakaan
     </h1>
 
     <!-- FILTER & SEARCH -->
